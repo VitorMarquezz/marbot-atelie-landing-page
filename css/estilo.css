@@ -1,0 +1,55 @@
+/* Marbot Ateliê · landing page
+   Cores e fontes do design system Marbot Ateliê; azulejos desenhados para a marca. */
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:#f3efe9}
+a{color:#1d395e}a:hover{color:#d46336}
+a:focus-visible,button:focus-visible{outline:2px solid #cc8b3c;outline-offset:3px}
+.mb-friso{background-image:url(../assets/img/azulejos/mosaico.svg);background-size:144px 144px;background-repeat:repeat-x}
+.mb-mosaico{background-image:url(../assets/img/azulejos/mosaico.svg);background-size:192px 192px}
+.mb-painel{background-image:url(../assets/img/azulejos/mosaico.svg);background-size:100% 100%}
+.mb-ladrilho{background-image:url(../assets/img/azulejos/mosaico.svg);background-size:300% 300%}
+.mb-textura{background-image:url(../assets/img/azulejos/textura.svg);background-size:96px 96px}
+@keyframes mb-flutuar{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-14px) rotate(2deg)}}
+@keyframes mb-sombra{0%,100%{transform:scaleX(1);opacity:.5}50%{transform:scaleX(.82);opacity:.28}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+img,video{max-width:100%}
+a,button{-webkit-tap-highlight-color:rgba(212,99,54,.18);touch-action:manipulation}
+.mb-zap{right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px))}
+/* tablet: menu recolhido e Tropical empilhado */
+@media (max-width: 960px){
+.mb-nav-links{display:none !important}
+.mb-trio{grid-template-columns:1fr 1fr !important;row-gap:28px !important}
+.mb-trio>div:nth-child(2){grid-column:1 / -1;order:-1;width:min(100%,380px);justify-self:center}
+.mb-lado{align-items:center !important;gap:24px !important}
+.mb-desloc{margin:0 !important;padding:0 !important}
+.mb-rotulo{justify-content:center !important}
+.mb-rotulo span{text-align:center !important}
+.mb-conector{display:none !important}
+}
+/* celular */
+@media (max-width: 640px){
+.mb-espiar{display:none !important}
+.mb-pontos{display:none !important}
+.mb-mesa{aspect-ratio:4 / 3 !important}
+.mb-sobre{gap:10px !important}
+.mb-sobre img{width:22px !important}
+.mb-sobre p{font-size:11px !important;letter-spacing:.18em !important}
+.mb-btn{width:100%;justify-content:center;padding:0 20px !important;text-align:center;box-sizing:border-box}
+.mb-aberto{padding-top:64px !important;gap:32px !important}
+.mb-ficha{transform:none !important}
+.mb-painel-doce{min-height:0 !important;padding:40px 16px 32px !important}
+.mb-zap{width:54px !important;height:54px !important}
+.mb-logo-texto{height:38px !important}
+.mb-logo-icone{width:38px !important;height:38px !important}
+}
+/* celular bem estreito (Android pequeno, iPhone SE) */
+@media (max-width: 380px){
+.mb-header{padding:12px 16px !important}
+.mb-logo-texto{display:none !important}
+}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+/* vídeo do Tropical: WebM transparente; Safari/iPhone recebem o WebP animado */
+.mb-so-safari{display:none !important}
+.sem-alfa .mb-so-alfa{display:none !important}
+.sem-alfa .mb-so-safari{display:block !important}
