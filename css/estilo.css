@@ -2,6 +2,11 @@
    Cores e fontes do design system Marbot Ateliê; azulejos desenhados para a marca. */
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+/* Rolagem suave (Lenis): a biblioteca assume o controle, então o CSS sai do caminho */
+html.lenis,html.lenis body{height:auto}
+html.lenis.lenis-smooth{scroll-behavior:auto !important}
+.lenis.lenis-stopped{overflow:clip}
+.lenis [data-lenis-prevent]{overscroll-behavior:contain}
 body{margin:0;background:#f3efe9}
 a{color:#1d395e}a:hover{color:#d46336}
 a:focus-visible,button:focus-visible{outline:2px solid #cc8b3c;outline-offset:3px}
