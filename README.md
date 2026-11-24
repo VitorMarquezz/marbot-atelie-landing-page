@@ -42,7 +42,7 @@ A tabela abaixo mostra as etapas de construção e publicação da página feita
 
 ## O que tem na página
 
-- **Abertura:** "Arte que se come", com moldura de azulejos.
+- **Abertura:** "Arte que se degusta", com moldura de azulejos.
 - **Por dentro do Tropical:** o bombom girando em 360°, com os sabores ao redor.
 - **O ateliê** e uma faixa emocional sobre memória.
 - **Carrossel de doces:** 8 peças, cada uma com foto e botão "Ver por dentro" (foto do recheio + ficha da peça). No celular, troca com o deslize do dedo.
